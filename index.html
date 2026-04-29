@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карьерный дайджест</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Карьерный сервис</p>
+        <h1>Вакансии и советы для соискателей</h1>
+      </div>
+
+      <div class="header-panel">
+        <p class="tabs-counter" aria-live="polite">
+          Открытых вкладок:
+          <strong id="tabsCount">1</strong>
+        </p>
+        <button class="theme-button" id="themeButton" type="button">
+          Тёмная тема
+        </button>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="cards-grid" aria-label="Карьерные карточки">
+        <article class="card">
+          <div>
+            <h2>Новые вакансии</h2>
+            <p>
+              Подборка свежих предложений от компаний: офис, удалёнка и
+              гибридный формат для разных уровней опыта.
+            </p>
+          </div>
+          <button type="button">Смотреть</button>
+        </article>
+
+        <article class="card">
+          <div>
+            <h2>Резюме</h2>
+            <p>
+              Проверьте заголовок, ключевые навыки и описание опыта, чтобы
+              работодателю было проще заметить ваш профиль.
+            </p>
+          </div>
+          <button type="button">Обновить</button>
+        </article>
+
+        <article class="card">
+          <div>
+            <h2>Отклики</h2>
+            <p>
+              Короткое сопроводительное письмо помогает объяснить мотивацию и
+              быстрее перейти к разговору с рекрутером.
+            </p>
+          </div>
+          <button type="button">Написать</button>
+        </article>
+
+        <article class="card">
+          <div>
+            <h2>Зарплатный обзор</h2>
+            <p>
+              Сравните ожидания с рынком и подготовьте аргументы для
+              обсуждения дохода на собеседовании.
+            </p>
+          </div>
+          <button type="button">Сравнить</button>
+        </article>
+      </section>
+
+      <section class="subscribe" aria-labelledby="subscribeTitle">
+        <div class="section-title">
+          <p class="eyebrow">Рассылка</p>
+          <h2 id="subscribeTitle">Карьерная подписка</h2>
+        </div>
+
+        <form class="subscribe-form" id="subscribeForm" novalidate>
+          <label for="emailInput">Email</label>
+          <div class="form-row">
+            <input
+              id="emailInput"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="name@example.com"
+            />
+            <button type="submit">Подписаться</button>
+          </div>
+          <p class="error-message" id="emailError" aria-live="polite"></p>
+        </form>
+
+        <ul class="subscribers-list" id="subscribersList" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
